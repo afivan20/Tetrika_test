@@ -23,7 +23,8 @@ https://docs.google.com/document/d/1Y_JYZmbKUmJEkGp9bdJz6SjtaFXuJNrRrxHN1dXnPzY/
 > В:....
 
 #### Решение
-Для парсинга страниц используются только две дополнительных библиотеки - requests и lxml.
+Для парсинга страниц используются однопоточное выполнение кода и только с двумя дополнительными библиотеками - *requests* и *lxml*.
+Время работы парсера в среднем занимает около 1 минуты.
 - Установите зависимости из файла requirements.txt
 ```
 pip install -r requirements.txt
