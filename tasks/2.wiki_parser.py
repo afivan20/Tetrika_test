@@ -12,7 +12,6 @@ def parse(link):
         text = response.text
         tree = html.document_fromstring(text)
         names = tree.xpath('//div[contains(@class, "mw-category mw-category-columns")]//text()')
-        
     except Exception as error:
         print(f'Упс... Что-то пошло не так: {error}')
         return
