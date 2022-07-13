@@ -46,4 +46,4 @@ pip install -r requirements.txt
 > учителя на уроке (в секундах).
 
 #### Решение
-Решение здесь - [`3.appearance.py`](https://github.com/afivan20/Tetrika_test/blob/main/tasks/3.appearance.py)
+Решение и тесты здесь - [`3.appearance.py`](https://github.com/afivan20/Tetrika_test/blob/main/tasks/3.appearance.py)
