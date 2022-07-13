@@ -1,4 +1,5 @@
 from urllib.parse import urlparse
+import os 
 
 import requests
 from lxml import etree
@@ -38,12 +39,14 @@ def parse(link):
         if name[0] in ANIMALS_ALPHABET:
             ANIMALS_ALPHABET[name[0]] += 1
         if name[0] == 'A':  # latin 'A'
+            os.remove('wiki_html')
             return
     try:
         href = tree.xpath('//a[contains(text(), "Следующая")]/@href')[1]
         next_page = f'http://{domain_name}{href}'
         parse(next_page)
     except Exception:
+        os.remove('wiki_html')
         return
 
 
